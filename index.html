@@ -1,0 +1,53 @@
+<!-- Add script to the <head> of your page to load the embeddable map component -->
+<script type="module" src="https://js.arcgis.com/5.0/embeddable-components/"></script>
+
+<!-- Custom header with your information -->
+<div style="
+  font-family: 'Segoe UI', Arial, sans-serif; 
+  padding: 15px 20px; 
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: white;
+  margin-bottom: 10px;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+">
+  <h1 style="margin: 0; font-size: 28px; font-weight: 600;">
+    🗺️ Interactive Map Presentation
+  </h1>
+  <div style="margin-top: 8px; font-size: 16px; opacity: 0.9;">
+    <strong>Mohamed Ait Abdelmalik</strong> | 
+    <a href="mailto:mohamed.aitabdelmalik@gmail.com" style="color: #4fc3f7; text-decoration: none;">
+      mohamed.aitabdelmalik@gmail.com
+    </a>
+  </div>
+</div>
+
+<!-- Add custom element to <body> of your page - optimized for PowerPoint 16:9 ratio -->
+<arcgis-embedded-map 
+  style="height:500px;width:100%;max-width:1200px;border-radius:0 0 8px 8px;box-shadow:0 4px 20px rgba(0,0,0,0.2);" 
+  item-id="c6bba9139c434434ac13c92939ae3593" 
+  theme="dark" 
+  bookmarks-enabled 
+  heading-enabled 
+  legend-enabled 
+  information-enabled 
+  basemap-gallery-enabled 
+  time-zone-label-enabled 
+  center="8.95201728722591,51.32168639217287"
+  scale="9244648.868618" 
+  portal-url="https://ucd-cpe.maps.arcgis.com">
+</arcgis-embedded-map>
+
+<!-- Optional footer with additional info -->
+<div style="
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin-top: 10px;
+  padding: 8px 20px;
+  background: #1a1a2e;
+  color: #aaa;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 0 0 8px 8px;
+">
+  Map data © ArcGIS | Presentation by Mohamed Ait Abdelmalik
+</div>
